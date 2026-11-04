@@ -14,7 +14,7 @@ kind: Kustomization
 # tiny, never-scheduled Deployment (replicas: 0) whose args carry the served
 # model name. The flat modelserver/kustomization.yaml does NOT reference this
 # directory, so `kubectl apply -k modelserver/` (the actual standup) never
-# applies it. Keep the model here in sync with the InferenceServerConfig patch
-# in ../../kustomization.yaml.
+# applies it. Keep the model here in sync with the InferenceServerConfig in
+# ../../../inferenceserverconfig.yaml.
 resources:
   - model-detect.yaml
